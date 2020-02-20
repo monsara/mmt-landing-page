@@ -4,247 +4,374 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Placeholder title</title>
+
+    <meta
+      name="description"
+      content="CILT is an end-to-end platform that overlaps data labeling and
+    training toolset with digital collaborative space. With it, you
+    can build an entire ML pipeline from square one. Manage all your
+    data operations in one place and accomplish the ultimate quality
+    of your ML models through CILT’s intuitive interface and scalable
+    tooling. Stable hosting and secure cloud storage to cache your
+    data included. Created by hands-on ML practitioners."
+    />
+    <meta name="author" content="Viktor Hirenko" />
+
+    <title>CILT — Collaborative Image Labeling Tool</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:700|Poppins:700|Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Сюда будет всталена ссылка на файл стилей -->
     <!-- inject:css -->
     <!-- endinject -->
   </head>
 
   <body class="page">
-    <header class="header page__header">
-      <span class="logo header__logo">
-        <img src="./images/Rectangle Logo.svg" alt="Logo" class="logo__img" />
-        <img src="./images/Text Logo.svg" alt="" class="logo__text" />
-      </span>
+    <header class="header page__header container">
+      <a href="#" class="link logo header__logo">
+        <img
+          src="./images/logo.svg"
+          alt="Logo"
+          class="logo__img"
+          width="36"
+          height="36"
+        />
+        <img
+          src="./images/logo-text-head.svg"
+          alt="Logo text"
+          class="logo__text"
+          width="53"
+          height="18"
+        />
+      </a>
 
-      <span class="log-in page-header__login"></span>
+      <button
+        class="button button_outlined_transparent button_place_header header__button"
+      >
+        <span class="button__text">Log in</span>
+      </button>
     </header>
 
     <main class="main-content page__mane-content">
       <h1 class="visually-hidden">Cilt landingpage main page</h1>
 
-      <!-- SCREEN-1 SECTION -->
-      <section class="section screen-1 page__screen-1">
-        <h2 class="section__title screen-1__title">Scree 1</h2>
+      <!-- INTRO SECTION -->
+      <section class="section intro page__intro">
+        <div class="intro__content container">
+          <h2 class="section__title visually-hidden">
+            Intro section
+          </h2>
 
-        <div class="screen-1__content">
-          <h3 class="screen-1__content-title">
-            CILT — Collaborative Image Labeling Tool
-          </h3>
+          <div class="intro__desc">
+            <h3 class="intro__desc-title">
+              CILT — Collaborative Image Labeling Tool
+            </h3>
 
-          <p class="screen-1__text">
-            CILT is an end-to-end platform that overlaps data labeling and
-            training toolset with digital collaborative space. With it, you can
-            build an entire ML pipeline from square one. Manage all your data
-            operations in one place and accomplish the ultimate quality of your
-            ML models through CILT’s intuitive interface and scalable tooling.
-            Stable hosting and secure cloud storage to cache your data included.
-            Created by hands-on ML practitioners.
-          </p>
+            <p class="intro__desc-text">
+              CILT is an end-to-end platform that overlaps data labeling and
+              training toolset with digital collaborative space. With it, you
+              can build an entire ML pipeline from square one. Manage all your
+              data operations in one place and accomplish the ultimate quality
+              of your ML models through CILT’s intuitive interface and scalable
+              tooling. Stable hosting and secure cloud storage to cache your
+              data included. Created by hands-on ML practitioners.
+            </p>
+          </div>
+
+          <form action="/" class="form form__container intro__form ">
+            <h3 class="form__title">Create new project</h3>
+
+            <ul class="form__list list">
+              <li class="form__item">
+                <span class="input form__control form__input">
+                  <input
+                    type="text"
+                    class="input__control"
+                    placeholder="Transport markup project|"
+                  />
+
+                  <span class="form__control-title">Name</span>
+                </span>
+              </li>
+
+              <li class="form__item">
+                <span class="select form__control form__select">
+                  <select
+                    class="select select__control"
+                    name="project_mode"
+                    id="project-mode"
+                  >
+                    <option value="1">Object detection</option>
+                    <option value="2">value 2</option>
+                  </select>
+
+                  <span class="form__control-title">Mode</span>
+                </span>
+              </li>
+
+              <li class="form__item">
+                <span class="select form__control form__select">
+                  <select
+                    class="select select__control"
+                    name="project_type"
+                    id="project-type"
+                  >
+                    <option value="1">Single</option>
+                    <option value="2">value 2</option>
+                  </select>
+
+                  <span class="form__control-title">Type</span>
+                </span>
+              </li>
+
+              <li class="form__item">
+                <button
+                  class="button button_theme button_primary button_place_form form__button"
+                >
+                  <span class="button__text">Create</span>
+                </button>
+              </li>
+            </ul>
+          </form>
         </div>
-
-        <form action="/" class="form screen-1__form">
-          <span class="input form__input">
-            <span class="input__legend">name</span>
-            <input
-              type="text"
-              class="input__control"
-              placeholder="Transport markup project"
-            />
-          </span>
-
-          <span class="input form__input">
-            <span class="input__legend">mode</span>
-            <input
-              type="text"
-              class="input__control"
-              placeholder="Object detection"
-            />
-          </span>
-
-          <span class="input form__input">
-            <span class="input__legend">type</span>
-            <input
-              type="text"
-              class="input__control"
-              placeholder="Object detection"
-            />
-          </span>
-
-          <button class="button button_color_blue">
-            <span class="button__text">Try it for free</span>
-          </button>
-        </form>
       </section>
 
-      <!-- SCREEN-2 SECTION -->
+      <!-- STACKS SECTION -->
 
-      <section class="section screen-2 page__screen-2">
-        <h2 class="section__title screen-2__title">The stack we offer:</h2>
+      <section class="section stacks page__stacks">
+        <div class="stacks__content container">
+          <h2 class="section__title stacks__title">The stack we offer:</h2>
 
-        <ul class="screen-2__cards">
-          <li class="card card_place_screen-2 screen-2__card">
-            <h3 class="card__title">Polygon annotation</h3>
+          <ul class="stacks__cards list">
+            <li class="card card_theme card_place_stacks stacks__card">
+              <h3 class="card card__title icon icon_polygon card__icon">
+                Polygon annotation
+              </h3>
 
-            <p class="card__text">
-              Polygone annotation executed by human data engineers allows
-              extracting irregular shapes and coarse, texturized objects from
-              videos and photos.
-            </p>
-          </li>
+              <p class="card card__text">
+                Polygone annotation executed by human data engineers allows
+                extracting irregular shapes and coarse, texturized objects from
+                videos and photos.
+              </p>
+            </li>
 
-          <li class="card card_place_screen-2  screen-2__card">
-            <h3 class="card__title">3D point cloud annotation</h3>
+            <li class="card card_theme card_place_stacks stacks__card">
+              <h3 class="card card__title icon icon_3d-point card__icon">
+                3D point cloud annotation
+              </h3>
 
-            <p class="card__text">
-              3D cloud annotation is a technique of defining a three-dimensional
-              structure of an object in space. Unlike the 3D cuboid tool, point
-              cloud one delivers the most accurate results.
-            </p>
-          </li>
+              <p class="card card__text">
+                3D cloud annotation is a technique of defining a
+                three-dimensional structure of an object in space. Unlike the 3D
+                cuboid tool, point cloud one delivers the most accurate results.
+              </p>
+            </li>
 
-          <li class="card card_place_screen-2 screen-2__card">
-            <h3 class="card__title">3D cuboid annotation</h3>
+            <li class="card card_theme card_place_stacks stacks__card">
+              <h3 class="card card__title icon icon_3d-cuboid card__icon">
+                3D cuboid annotation
+              </h3>
 
-            <p class="card__text">
-              Cuboid annotation allows building a realistic 3D perception of the
-              surrounding. This tool is widely used for mapping, self-driving
-              vehicles, object distribution, etc.
-            </p>
-          </li>
+              <p class="card card__text">
+                Cuboid annotation allows building a realistic 3D perception of
+                the surrounding. This tool is widely used for mapping,
+                self-driving vehicles, object distribution, etc.
+              </p>
+            </li>
 
-          <li class="card screen-2__card">
-            <h3 class="card__title">Bounding box annotation</h3>
+            <li class="card card_theme card_place_stacks stacks__card">
+              <h3 class="card card__title icon icon_bounding card__icon">
+                Bounding box annotation
+              </h3>
 
-            <p class="card__text">
-              A labeling tool for object detection in pictures, especially if
-              the quality of raw materials isn’t perfect. Effectively used for
-              drone maps, satellite imagery, and medical data.
-            </p>
-          </li>
+              <p class="card card__text">
+                A labeling tool for object detection in pictures, especially if
+                the quality of raw materials isn’t perfect. Effectively used for
+                drone maps, satellite imagery, and medical data.
+              </p>
+            </li>
 
-          <li class="card card_place_screen-2 screen-2__card">
-            <h3 class="card__title">Landmark annotation</h3>
+            <li class="card card_theme card_place_stacks stacks__card">
+              <h3 class="card card__title icon icon_landmark card__icon">
+                Landmark annotation
+              </h3>
 
-            <p class="card__text">
-              It’s a practice of indicating key points at specific locations of
-              the image. It is used to recognize the smallest expressions,
-              gestures, and actions of the observed subject, as well as to
-              construct the movement trajectory of scenes.
-            </p>
-          </li>
-        </ul>
+              <p class="card card__text">
+                It’s a practice of indicating key points at specific locations
+                of the image. It is used to recognize the smallest expressions,
+                gestures, and actions of the observed subject, as well as to
+                construct the movement trajectory of scenes.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <!-- SCREEN-3 SECTION -->
+      <!-- description SECTION -->
 
-      <section class="section scree-3 page__screen-3">
-        <h2 class="section__title screen-3__title">Screen 3</h2>
-
-        <ul class="screen-3__cards">
-          <li class="card card_place_screen-3">
-            <h3 class="card__title">Check</h3>
-
-            <p class="card__text">
-              The CILT review mode enables you to monitor the workflow and
-              revise inaccuracies when spotted.
-            </p>
-          </li>
-
-          <li class="card card_place_screen-3">
-            <h3 class="card__title">Collaborate</h3>
-
-            <p class="card__text">
-              The collaborative mode allows an unlimited number of team members
-              to iterate on the project in the most seamless way.
-            </p>
-          </li>
-        </ul>
-
-        <button class="button button_mute">
-          <span class="button__text">Try it for free</span>
-        </button>
-      </section>
-
-      <!-- SCREEN-4 SECTION -->
-      <section class="section screen-4 page__screen-4">
-        <h2 class="section__titlу screen-4__section">Our subscription plans</h2>
-
-        <ul class="screen-4__cards">
-          <li class="card card_place_4">
-            <header class="card__header">
-              <h3 class="card__name">Starter</h3>
-
-              <div class="card__price">
-                <span class="card__price-value">Free</span>
-              </div>
-            </header>
-
-            <div class="card__body">
-              <ul class="card__list">
-                <li class="card__item">500 images to mark up</li>
-                <li class="card__item">Unlimited team members</li>
-                <li class="card__item">Unlimited projects</li>
-              </ul>
-
-              <button class="button button_color_white">
-                <span class="button__text text text__upper">Start now</span>
-              </button>
-            </div>
-          </li>
-
-          <li class="card card_place_4">
-            <header class="card__header">
-              <h3 class="card__name">Complete</h3>
-
-              <div class="card__price">
-                <span class="card__currency">$</span>
-                <span class="card__price-value">5</span>
-              </div>
-            </header>
-
-            <div class="card__body">
-              <ul class="card__list">
-                <li class="card__item">Unlimited images to mark up</li>
-                <li class="card__item">Unlimiteds team members</li>
-                <li class="card__item">Unlimiteds projects</li>
-              </ul>
-
-              <button class="button button_color_blue">
-                <span class="button__text">Purchase now</span>
-              </button>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-      <!-- SCREEN-5 SECTION -->
-      <section class="section screen-5 page__screen-5">
-        <h2 class="section__title screen-4__title">
-          Machine learning model can only be as good as your labeled data is.
+      <section class="section description page__description">
+        <h2 class="section__title description__title visually-hidden">
+          Screen 3
         </h2>
 
-        <p class="screen-5__text">
-          CILT assures accurate and well-tailored data annotation practice that
-          can turn a pile of informational junk into solid gold for any
-          business.
-        </p>
+        <div class="description__content container">
+          <ul class="description__cards list">
+            <li
+              class="card card_theme card_place_description description__card"
+            >
+              <h3 class="card card__title icon icon_check card__icon">Check</h3>
 
-        <button class="button_place_screen-3">
-          <span class="button__text">Start now</span>
-        </button>
+              <p class="card card__text">
+                The CILT review mode enables you to monitor the workflow and
+                revise inaccuracies when spotted.
+              </p>
+            </li>
+
+            <li
+              class="card card_theme card_place_description description__card"
+            >
+              <h3 class="card card__title icon icon_collaborate card__icon">
+                Collaborate
+              </h3>
+
+              <p class="card card__text">
+                The collaborative mode allows an unlimited number of team
+                members to iterate on the project in the most seamless way.
+              </p>
+            </li>
+          </ul>
+
+          <button
+            class="button button_theme button_outlined_white button_place_description"
+          >
+            <span class="button__text">Try it for free</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- SUBSCRIPTIONS SECTION -->
+      <section class="section subscriptions page__subscriptions">
+        <div class="subscriptions__content container">
+          <h2 class="section__title subscriptions__title">
+            Our subscription plans
+          </h2>
+
+          <ul class="subscriptions__cards list">
+            <li
+              class="card card_theme card_place_subscriptions subscriptions__card subscription-card subscription-card_starter"
+            >
+              <header class="card card__header subscription-card__header">
+                <h3 class="card card__title">Starter</h3>
+
+                <div class="subscription-card__price">
+                  <span class="subscription-card__price-value">Free</span>
+                </div>
+              </header>
+
+              <div
+                class="card card_theme__body card__text subscription-card__body"
+              >
+                <ul class="subscription-card__list">
+                  <li class="subscription-card__item">500 images to mark up</li>
+
+                  <li class="subscription-card__item">
+                    Unlimited team members
+                  </li>
+
+                  <li class="subscription-card__item">Unlimited projects</li>
+                </ul>
+
+                <button
+                  class="button button_theme button_outlined_blue subscription-card__button"
+                >
+                  <span class="button__text text text__upper">Start now</span>
+                </button>
+              </div>
+            </li>
+
+            <li
+              class="card card_theme card_place_subscriptions subscriptions__card subscription-card subscription-card_complete"
+            >
+              <header class="card card__header subscription-card__header">
+                <h3 class="card card__title">Complete</h3>
+
+                <div class="subscription-card__price">
+                  <span class="subscription-card__currency">$</span>
+                  <span class="subscription-card__price-value">5</span>
+                </div>
+
+                <p class="subscription-card__desc">
+                  Subscription for one person
+                </p>
+              </header>
+
+              <div
+                class="card card_theme__body card__text subscription-card__body"
+              >
+                <ul class="subscription-card__list">
+                  <li class="subscription-card__item">
+                    Unlimited images to mark up
+                  </li>
+
+                  <li class="subscription-card__item">
+                    Unlimiteds team members
+                  </li>
+
+                  <li class="subscription-card__item">Unlimiteds projects</li>
+                </ul>
+
+                <button
+                  class="button button_theme button_primary subscription-card__button"
+                >
+                  <span class="button__text">Purchase now</span>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- learning SECTION -->
+      <section class="section section_light-blue learning page__learning">
+        <div class="learning__content container">
+          <h2 class="section__title learning__title">
+            Machine learning model can only be as good as your labeled data is.
+          </h2>
+
+          <p class="learning__text">
+            CILT assures accurate and well-tailored data annotation practice
+            that can turn a pile of informational junk into solid gold for any
+            business.
+          </p>
+
+          <button
+            class="button button_theme button_primary button_place_learning"
+          >
+            <span class="button__text">Start now</span>
+          </button>
+        </div>
       </section>
     </main>
 
     <footer class="footer page__footer">
-      <span class="logo logo_view_footer footer__logo">
-        <img src="./images/Rectangle Logo.svg" alt="Logo" class="logo__img" />
-        <img src="./images/Text Logo.svg" alt="" class="logo__text" />
-      </span>
+      <div class="footer__container footer__content container">
+        <a href="#" class="link logo footer__logo">
+          <img
+            src="./images/logo-text-foot.svg"
+            alt="Logo text"
+            class="logo__text"
+            width="32"
+            height="11"
+          />
+        </a>
 
-      <span class="footer__copyright"
-        >Copyright © 2019 CILT. All Rights Reserved.</span
-      >
+        <span class="footer__copyright"
+          >Copyright © 2019 CILT. All Rights Reserved.</span
+        >
+      </div>
     </footer>
     <!-- Сюда будет всталена ссылка на файл скриптов -->
     <!-- inject:js -->
