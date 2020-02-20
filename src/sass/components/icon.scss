@@ -1,0 +1,15 @@
+.icon {
+  &::before {
+    display: block;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    content: '';
+  }
+}
+
+$icons: polygon, 3d-point, 3d-cuboid, bounding, landmark, check, collaborate;
+
+@include generate-pseudo-icons('icon_', $icons, '../images/icons/', 'svg');

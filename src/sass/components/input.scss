@@ -1,0 +1,50 @@
+.input__control {
+  width: 100%;
+  min-height: 40px;
+
+  padding-top: 4.60358%;
+  padding-bottom: 3.580563%;
+  padding-left: 4.092072%;
+  padding-right: 13.299233%;
+  border: 1px solid hsla(0, 0%, 10%, 0.38);
+
+  @include font-settings(12px, 1.5em);
+
+  font-weight: 400;
+
+  color: hsla(0, 0%, 0%, 0.87);
+  text-transform: uppercase;
+
+  border-radius: 8px;
+  outline: 0;
+
+  @media screen and (min-width: $breakpoint-md) {
+    min-height: 56px;
+
+    font-size: 16px;
+  }
+
+  &:focus {
+    border: 1px solid $primary-color;
+  }
+
+  &:focus + .form__control-title {
+    color: $primary-color;
+  }
+
+  &[type='text']::-webkit-input-placeholder {
+    color: hsla(0, 0%, 0%, 0.87);
+  }
+
+  &[type='text']:-ms-input-placeholder {
+    color: hsla(0, 0%, 0%, 0.87);
+  }
+
+  &[type='text']::-ms-input-placeholder {
+    color: hsla(0, 0%, 0%, 0.87);
+  }
+
+  &[type='text']::placeholder {
+    color: hsla(0, 0%, 0%, 0.87);
+  }
+}

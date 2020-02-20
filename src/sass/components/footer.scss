@@ -1,0 +1,27 @@
+.footer {
+  background: #44454e;
+}
+
+.footer__container {
+  @media screen and (min-width: 1440px) {
+    max-width: 1277.96px;
+  }
+}
+
+.footer__content {
+  color: rgba(255, 255, 255, 0.95);
+  text-align: center;
+
+  @media screen and (min-width: 400px) {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer__copyright {
+  @include font-settings(12px, 1.5em);
+
+  font-weight: 400;
+}

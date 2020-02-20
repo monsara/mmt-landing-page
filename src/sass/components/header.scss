@@ -1,0 +1,12 @@
+.header__logo {
+  display: flex;
+
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 104.06px;
+}
+
+.header__button {
+  flex: 0 68px;
+}

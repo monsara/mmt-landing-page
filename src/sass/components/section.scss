@@ -1,0 +1,20 @@
+.section {
+  &_light-blue {
+    background: $light-blue-color;
+  }
+}
+
+.section__title {
+  margin: 0;
+
+  font-family: 'Poppins', sans-serif;
+
+  @include font-settings(30px, 1.5em);
+
+  color: $primary-color;
+  text-align: center;
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 38px;
+  }
+}

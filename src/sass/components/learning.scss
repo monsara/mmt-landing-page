@@ -1,0 +1,62 @@
+.learning__content {
+  text-align: center;
+
+  @media screen and (min-width: $breakpoint-md) {
+    text-align: left;
+
+    @include bg-image(
+      $path: '../images/learning-bg.svg',
+      $size: 350px,
+      $pos: right bottom
+    );
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    text-align: left;
+
+    @include bg-image(
+      $path: '../images/learning-bg.svg',
+      $size: 450px,
+      $pos: right bottom
+    );
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    background-size: auto;
+  }
+}
+
+.learning__title {
+  margin-bottom: 51px;
+
+  @media screen and (min-width: $breakpoint-md) {
+    padding-right: 150px;
+
+    text-align: left;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    padding-right: 200px;
+  }
+}
+
+.learning__text {
+  margin-bottom: 50px;
+
+  @include font-settings(20px, 1.15em);
+
+  font-weight: 400;
+
+  color: rgba(68, 69, 78, 0.85);
+
+  @media screen and (min-width: $breakpoint-md) {
+    max-width: 400px;
+    margin-bottom: 95px;
+
+    text-align: left;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    max-width: 500px;
+  }
+}

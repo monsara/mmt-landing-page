@@ -1,0 +1,77 @@
+.button {
+  &_theme {
+    padding: 10px 16px;
+
+    font-weight: 400;
+
+    @include font-settings(14px, 1.14285714em);
+
+    color: rgba(255, 255, 255, 0.95);
+    text-align: center;
+    letter-spacing: 0.75px;
+    text-transform: uppercase;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+  }
+
+  &_primary {
+    border: 0;
+    background: $primary-color;
+  }
+
+  &_outlined_transparent {
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  &_outlined_white {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid $white-color;
+  }
+
+  &_outlined_blue {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid $primary-color;
+
+    & .button__text {
+      color: $primary-color;
+    }
+  }
+
+  &_place_form {
+    width: 100%;
+
+    @media screen and (min-width: $breakpoint-lg) {
+      width: auto;
+    }
+
+    & .button__text {
+      margin: 0 15px;
+    }
+  }
+
+  &_place_description {
+    & .button__text {
+      margin: 0 50px;
+    }
+  }
+
+  &_place_learning {
+    & .button__text {
+      margin: 0 68px;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0px 2px 32px rgba(41, 65, 129, 0.1);
+  }
+}
+
+.button__text {
+  @include font-settings(14px, 1.14285714em);
+
+  color: rgba(255, 255, 255, 0.95);
+  text-transform: uppercase;
+}

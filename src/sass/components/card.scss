@@ -1,0 +1,108 @@
+.card {
+  &_theme {
+    display: flex;
+
+    flex-flow: column;
+
+    text-align: center;
+
+    border-radius: 8px;
+    background: $white-color;
+    box-shadow: 0px 2px 32px rgba(41, 65, 129, 0.1);
+
+    @media screen and (min-width: $breakpoint-md) {
+      text-align: left;
+    }
+  }
+
+  &_place_stacks {
+    & .card__title {
+      margin-bottom: 16px;
+
+      @include font-settings(20px, 1.15em);
+    }
+
+    & .card__icon::before {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 19px;
+    }
+  }
+
+  &_place_description {
+    & .card__title {
+      margin-bottom: 15.5px;
+
+      @include font-settings(32px, 1.5em);
+
+      @media screen and (min-width: $breakpoint-sm) {
+        @include font-settings(38px, 1.5em);
+      }
+
+      @media screen and (min-width: $breakpoint-xl) {
+        margin-bottom: 55.5px;
+      }
+    }
+
+    & .card__icon::before {
+      display: inline-block;
+      width: 104px;
+      height: 104px;
+
+      vertical-align: middle;
+
+      @media screen and (min-width: $breakpoint-md) {
+        margin-right: 36.88px;
+      }
+    }
+  }
+
+  &_place_subscriptions {
+    padding: 0;
+
+    & .card__header {
+      padding: 16px 15px;
+
+      text-align: center;
+
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+    }
+
+    & .card__title {
+      margin-bottom: 10px;
+
+      font-family: 'Open Sans', sans-serif;
+
+      @include font-settings(24px, 1.375em);
+
+      font-weight: 700;
+
+      color: $white-color;
+    }
+  }
+}
+
+.card__title {
+  position: relative;
+
+  display: flex;
+  margin: 0;
+
+  flex-direction: column;
+  align-items: center;
+
+  font-family: 'Poppins', sans-serif;
+
+  color: #44454e;
+
+  @media screen and (min-width: $breakpoint-md) {
+    display: block;
+  }
+}
+
+.card__text {
+  margin: 0;
+
+  color: rgba(68, 69, 78, 0.85);
+}

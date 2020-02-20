@@ -1,0 +1,33 @@
+.select {
+  &_theme {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      top: 19px;
+      right: 15px;
+
+      width: 10px;
+      height: 5px;
+
+      @include bg-image('../images/arrow-down.svg');
+
+      content: '';
+
+      @media screen and (min-width: $breakpoint-md) {
+        top: 26px;
+        right: 19px;
+      }
+    }
+  }
+}
+
+.select__control {
+  @extend .input__control;
+
+  background: transparent;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

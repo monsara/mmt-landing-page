@@ -1,0 +1,70 @@
+.subscriptions {
+  @include bg-image('../images/dots-bg.png');
+}
+
+.subscriptions__title {
+  position: relative;
+
+  display: flex;
+  margin-bottom: 30px;
+
+  justify-content: center;
+
+  &::before {
+    position: absolute;
+    top: -77px;
+    z-index: -1;
+
+    display: block;
+
+    width: 88.819444vw;
+    min-height: 213px;
+
+    @include bg-image(
+      $path: '../images/subscriptions-title-bg.svg',
+      $size: contain
+    );
+
+    content: '';
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    margin-bottom: 104px;
+  }
+}
+
+.subscriptions__cards {
+  display: flex;
+
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.subscriptions__card {
+  max-width: 297px;
+  min-height: 394px;
+  margin-bottom: 32px;
+  // padding: 56px 32px;
+
+  flex: 0 297px;
+
+  @media screen and (min-width: $breakpoint-md-down) and (max-width: $breakpoint-lg-down) {
+    &:not(:last-child) {
+      margin-right: 56px;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-md-down) {
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-right: 56px;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    &:not(:last-child) {
+      margin-right: 84px;
+    }
+  }
+}

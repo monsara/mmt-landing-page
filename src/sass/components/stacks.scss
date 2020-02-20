@@ -1,0 +1,94 @@
+.stacks__title {
+  position: relative;
+
+  display: flex;
+  margin-bottom: 30px;
+
+  justify-content: center;
+
+  @media screen and (min-width: $breakpoint-md) {
+    margin-bottom: 74px;
+  }
+
+  &::before {
+    position: absolute;
+    top: -60px;
+    z-index: -1;
+
+    display: block;
+
+    width: 89.074074%;
+    min-height: 146px;
+
+    @include bg-image($path: '../images/stacks-title-bg.svg', $size: contain);
+
+    content: '';
+  }
+}
+
+.stacks__cards {
+  display: flex;
+
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.stacks__card {
+  max-width: 344px;
+  min-height: 277px;
+  margin-bottom: 32px;
+  padding: 24px;
+  padding-top: 27px;
+
+  flex: 0 344px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg-down) {
+    max-width: 300px;
+    margin-right: 24px;
+    flex: 0 300px;
+
+    // remove right margin for every 2nd card
+    &:nth-child(2n + 2) {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-lg) and (max-width: $breakpoint-xl-down) {
+    &:nth-child(1n) {
+      margin-right: 24px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    margin-right: 24px;
+
+    // remove right margin for every 3rd card
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+
+    // remove bottom margin for the last 2 cards
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

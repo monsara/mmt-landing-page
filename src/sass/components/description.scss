@@ -1,0 +1,73 @@
+.description {
+  background: radial-gradient(
+    100% 367.66% at 0%50.07%,
+    #0030ae 0%,
+    #0081f1 100%
+  );
+  background-position: bottom;
+
+  @media screen and (min-width: $breakpoint-md) {
+    background: url(../images/description-bg.svg),
+      radial-gradient(100% 367.66% at 0%50.07%, #0030ae 0%, #0081f1 100%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% -7px, bottom;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    background-position: 50% -35px, bottom;
+  }
+}
+
+.description__content {
+  text-align: center;
+}
+
+.description__cards {
+  display: flex;
+  margin-bottom: 74px;
+
+  flex-flow: row wrap;
+  justify-content: center;
+
+  @media screen and (min-width: $breakpoint-xl) {
+    margin-bottom: 74px;
+
+    justify-content: space-between;
+  }
+}
+
+.description__card {
+  max-width: 344px;
+  min-height: 292px;
+  margin-bottom: 32px;
+  padding: 56px 32px;
+
+  flex: 0 344px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-xl-down) {
+    max-width: 300px;
+    margin-right: 84px;
+    margin-bottom: 0;
+    flex: 0 300px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    max-width: 512px;
+    margin-bottom: 0;
+
+    flex: 0 512px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.subscription-card {
+  text-align: center;
+
+  &_starter {
+    & .subscription-card__header {
+      padding-bottom: 28px;
+
+      background: $green-color;
+    }
+
+    & .subscription-card__price {
+      @include font-settings(70px, 1.17142857em);
+    }
+  }
+
+  &_complete {
+    & .subscription-card__header {
+      padding-bottom: 10px;
+
+      background: $primary-color;
+    }
+
+    & .subscription-card__price {
+      @include font-settings(70px, 1.17142857em);
+    }
+
+    & .subscription-card__currency {
+      margin-bottom: 2px;
+
+      @include font-settings(40px, 1.175em);
+    }
+  }
+}
+
+.subscription-card__header {
+  margin-bottom: 20px;
+
+  color: $white-color;
+}
+
+.subscription-card__body {
+  display: flex;
+  height: 100%;
+
+  flex-flow: column;
+}
+
+.subscription-card__desc {
+  margin: 0;
+
+  @include font-settings(12px, 152.64%);
+}
+
+.subscription-card__body {
+  padding: 0 24px;
+  padding-bottom: 28px;
+}
+
+.subscription-card__price {
+  font-weight: 400;
+}
+
+.subscription-card__list {
+  margin-bottom: 40px;
+  padding-left: 17px;
+
+  flex: 1 auto;
+
+  text-align: left;
+  list-style: disc;
+}
+
+.subscription-card__item {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.subscription-card__button {
+  width: 100%;
+
+  flex: 0 auto;
+}
