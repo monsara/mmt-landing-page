@@ -9,7 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://luxplanjay.github.io/gulp-starter-kit",
+  "homepage": "https://testgitlab.idapgroup.com/viktor.hirenko/mmt_landing.git",
   "repository": {
     "type": "git",
     "url": "git+https://testgitlab.idapgroup.com/viktor.hirenko/mmt_landing.git"
