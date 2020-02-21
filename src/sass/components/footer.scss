@@ -20,6 +20,10 @@
   }
 }
 
+.footer__logo {
+  display: block;
+}
+
 .footer__copyright {
   @include font-settings(12px, 1.5em);
 
