@@ -9,10 +9,10 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://testgitlab.idapgroup.com/viktor.hirenko/mmt_landing.git",
+  "homepage": "https://monsara.github.io/mmt_landing",
   "repository": {
     "type": "git",
-    "url": "git+https://testgitlab.idapgroup.com/viktor.hirenko/mmt_landing.git"
+    "url": "git+https://github.com/monsara/gulp-starter-kit.git"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "MIT",
